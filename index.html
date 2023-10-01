@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event</title>
+    <style>
+      /* Styling for the header section */
+      .header {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        height: 600px;
+        justify-content: center;
+        gap: 3rem;
+        font-family: cursive;
+      }
+
+      /* Styling for the entire body */
+      body {
+        background-color: rgb(3, 3, 133);
+      }
+
+      /* Styling for the container divs */
+      .container > div {
+        border: 2px solid white;
+        width: 200px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        align-items: center;
+      }
+
+      /* Styling for text color in container */
+      .container > h4 {
+        color: white;
+      }
+
+      /* Styling for another set of container divs */
+      .container1 > div {
+        text-align: center;
+        border: 2px solid white;
+        width: 200px;
+        height: 100px;
+        color: white;
+      }
+
+      /* Styling for specific divs with IDs div1 and div3 */
+      #div1, #div3 {
+        margin-top: 25px;
+        font-size: 30px;
+      }
+
+      /* Styling for text color in container1 */
+      .container1 > h4 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header section containing two container divs -->
+    <div class="header">
+      <!-- Container for displaying Mouse X Position (px) -->
+      <div class="container">
+        <h4>Mouse X Position (px)</h4>
+        <!-- Paragraph element to display X position (initially set to 455) -->
+        <div> <p id="div3">455</p></div>
+      </div>
+
+      <!-- Container for displaying Mouse Y Position (px) -->
+      <div class="container1">
+        <h4>Mouse Y Position (px)</h4>
+        <!-- Paragraph element to display Y position (initially set to 522) -->
+        <div> <p id="div1">522</p></div>
+      </div>
+    </div>
+
+    <!-- JavaScript file linked to this HTML page -->
+    <script src="script.js"></script>
+  </body>
+</html>
